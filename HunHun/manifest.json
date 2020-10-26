@@ -1,0 +1,34 @@
+{
+    "name": "HunHun",
+    "version": "1.0.0",
+    "author" : "Rintaro Kobayashi",
+    "manifest_version": 2,
+    "icons" : { "32" : "icon.jpeg"},
+    "description": "More secure internet.",
+    "content_scripts": [{
+      "matches": ["http://*/*"],
+      "js": [
+        "http-alert.js"
+      ]
+    },
+    {
+        "matches" : ["https://*/*", "http://*/*"],
+        "js": [
+            "dubdub.js"
+        ]
+    },
+    { 
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["noopener.js"]
+    }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+          "32": "icon.jpeg"
+        }
+      }
+  }

@@ -1,0 +1,1 @@
+window.alert('Do not send your information in this page. - From HunHun');
