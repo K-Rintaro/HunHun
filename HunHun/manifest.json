@@ -3,7 +3,14 @@
     "version": "1.0.0",
     "author" : "Rintaro Kobayashi",
     "manifest_version": 2,
-    "icons" : { "32" : "icon.jpeg"},
+    "icons" : {     
+      "16" : "16icon.png",
+      "19" : "19icon.png",
+      "32": "32icon.ico",
+      "48": "48icon.ico",
+      "128": "128icon.ico",
+      "114": "114icon.png",
+      "144": "144icon.png"},
     "description": "More secure internet.",
     "content_scripts": [{
       "matches": ["http://*/*"],
@@ -17,18 +24,37 @@
             "dubdub.js"
         ]
     },
+    {
+      "matches" : ["https://*/*", "http://*/*"],
+      "js": [
+          "blockurl.js"
+      ]
+  },
     { 
       "matches": [
         "http://*/*",
         "https://*/*"
       ],
       "js": ["noopener.js"]
+    },
+    { 
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["checkcookie.js"]
     }
     ],
     "browser_action": {
         "default_popup": "popup.html",
-        "default_icon": {
-          "32": "icon.jpeg"
-        }
-      }
+        "default_icon":  "16icon.png"
+    },
+    "background": {
+      "scripts": ["blockcookie.js"]
+    },
+    "permissions": [
+        "cookies",
+        "http://*/*",
+        "https://*/*"
+      ]
   }
