@@ -19,12 +19,6 @@
       ]
     },
     {
-        "matches" : ["https://*/*", "http://*/*"],
-        "js": [
-            "dubdub.js"
-        ]
-    },
-    {
       "matches" : ["https://*/*", "http://*/*"],
       "js": [
           "blockurl.js"
@@ -50,11 +44,16 @@
         "default_icon":  "16icon.png"
     },
     "background": {
-      "scripts": ["blockcookie.js"]
+      "scripts": [
+        "blockcookie.js",
+        "csp.js"
+      ]
     },
     "permissions": [
         "cookies",
         "http://*/*",
-        "https://*/*"
+        "https://*/*",
+        "webRequest",
+        "webRequestBlocking"
       ]
   }
