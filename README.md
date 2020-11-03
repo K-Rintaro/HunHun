@@ -1,5 +1,6 @@
 # HunHun
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+<img src="https://img.shields.io/github/v/release/K-Rintaro/HunHun">
 <img src="https://img.shields.io/badge/Javascript-276DC3.svg?logo=javascript&style=flat">
 <img src="https://img.shields.io/badge/-Google%20chrome-4285F4.svg?logo=google-chrome&style=flat">
 <img src="https://img.shields.io/github/repo-size/K-Rintaro/HunHun">
@@ -69,7 +70,7 @@ After :
 HunHun displays Cookie notification without feeling uncomfortable if the site that you visit uses Cookies.
 
 ## Latest release 
-Coming soon.
+🎉 Latest release: [v1.0.0](https://github.com/K-Rintaro/HunHun/releases/tag/1.0.0)
 
 ## LICENSE
 K-Rintaro/HunHun is licensed under the Mozilla Public License 2.0
