@@ -73,4 +73,4 @@ HunHun displays Cookie notification without feeling uncomfortable if the site th
 🎉 Latest release: [v1.0.0](https://github.com/K-Rintaro/HunHun/releases/tag/1.0.0)
 
 ## LICENSE
-K-Rintaro/HunHun is licensed under the Mozilla Public License 2.0
+K-Rintaro/HunHun is licensed under the Do What The F*ck You Want To Public License
